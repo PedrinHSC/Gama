@@ -1,0 +1,32 @@
+{
+  "annotations": {
+    "changelogDate": "20250316175935"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "area",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "meta",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "1000",
+      "fieldValidateRulesMin": "0"
+    }
+  ],
+  "name": "MetaNota",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "aluno",
+      "otherEntityRelationshipName": "metaNota",
+      "relationshipName": "aluno",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

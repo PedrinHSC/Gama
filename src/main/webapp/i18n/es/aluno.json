@@ -1,0 +1,27 @@
+{
+  "avaliacaoTesteApp": {
+    "aluno": {
+      "home": {
+        "title": "Alunos",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Aluno",
+        "createOrEditLabel": "Crear o editar Aluno",
+        "notFound": "Ningún Alunos encontrado"
+      },
+      "created": "Un nuevo Aluno ha sido creado con el identificador {{ param }}",
+      "updated": "Un Aluno ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Aluno ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Aluno {{ id }}?"
+      },
+      "detail": {
+        "title": "Aluno"
+      },
+      "id": "ID",
+      "nome": "Nome",
+      "email": "Email",
+      "telefone": "Telefone",
+      "metaNota": "Meta Nota"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "avaliacaoTesteApp": {
+    "metaNota": {
+      "home": {
+        "title": "Meta Notas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Meta Nota",
+        "createOrEditLabel": "Create or edit a Meta Nota",
+        "notFound": "No Meta Notas found"
+      },
+      "created": "A new Meta Nota is created with identifier {{ param }}",
+      "updated": "A Meta Nota is updated with identifier {{ param }}",
+      "deleted": "A Meta Nota is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Meta Nota {{ id }}?"
+      },
+      "detail": {
+        "title": "Meta Nota"
+      },
+      "id": "ID",
+      "area": "Area",
+      "meta": "Meta",
+      "aluno": "Aluno"
+    }
+  }
+}

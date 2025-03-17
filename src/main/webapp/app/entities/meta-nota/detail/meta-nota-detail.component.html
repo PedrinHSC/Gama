@@ -1,0 +1,46 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (metaNota(); as metaNotaRef) {
+      <div>
+        <h2 data-cy="metaNotaDetailsHeading"><span jhiTranslate="avaliacaoTesteApp.metaNota.detail.title">Meta Nota</span></h2>
+
+        <hr />
+
+        <jhi-alert-error></jhi-alert-error>
+
+        <jhi-alert></jhi-alert>
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="global.field.id">Código</span></dt>
+          <dd>
+            <span>{{ metaNotaRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="avaliacaoTesteApp.metaNota.area">Area</span></dt>
+          <dd>
+            <span>{{ metaNotaRef.area }}</span>
+          </dd>
+          <dt><span jhiTranslate="avaliacaoTesteApp.metaNota.meta">Meta</span></dt>
+          <dd>
+            <span>{{ metaNotaRef.meta }}</span>
+          </dd>
+          <dt><span jhiTranslate="avaliacaoTesteApp.metaNota.aluno">Aluno</span></dt>
+          <dd>
+            @if (metaNota()!.aluno) {
+              <div>
+                <a [routerLink]="['/aluno', metaNota()!.aluno?.id, 'view']">{{ metaNotaRef.aluno?.id }}</a>
+              </div>
+            }
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Voltar</span>
+        </button>
+
+        <button type="button" [routerLink]="['/meta-nota', metaNotaRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Editar</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

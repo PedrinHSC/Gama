@@ -1,0 +1,109 @@
+.d-flex.justify-content-center {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.col-8 {
+  width: 100%;
+  max-width: 800px;
+}
+
+#jhi-aluno-heading {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+jhi-alert-error {
+  margin-bottom: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #495057;
+}
+
+.form-control {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-text.text-danger {
+  font-size: 0.875rem;
+  color: #dc3545;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: 1px solid #6c757d;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: 1px solid #007bff;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.fa-icon {
+  margin-right: 5px;
+}
+
+#cancel-save {
+  margin-right: 10px;
+}
+
+#save-entity {
+  margin-left: 10px;
+}
+
+form {
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .col-8 {
+    width: 100%;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-control,
+  .select {
+    font-size: 0.875rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+    padding: 8px 16px;
+  }
+}
